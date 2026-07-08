@@ -7,6 +7,6 @@ export const connectDB = async () => {
     console.log('MongoDB database connected successfully!');
   } catch (err) {
     console.error('Error connecting to MongoDB database:', err.message);
-    process.exit(1);
+    // Do not exit the process, so that the server stays online and can report the connection error or allow CORS preflights.
   }
 };
