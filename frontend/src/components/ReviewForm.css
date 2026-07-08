@@ -1,0 +1,94 @@
+.review-form-container {
+  padding: 24px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-form-container h4 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.interactive-stars-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.interactive-star-btn {
+  background: none;
+  border: none;
+  font-size: 2.2rem;
+  color: #E0E0E0;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.1s ease, color 0.1s ease;
+}
+
+.interactive-star-btn:hover {
+  transform: scale(1.2);
+}
+
+.interactive-star-btn.active {
+  color: var(--accent);
+}
+
+.rating-label-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-left: 10px;
+}
+
+.review-textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.5;
+}
+
+.submit-review-btn {
+  align-self: flex-start;
+  min-width: 150px;
+}
+
+
+.review-form-logged-out {
+  padding: 30px;
+  text-align: center;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-form-logged-out h4 {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+}
+
+.review-form-logged-out p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-cta-btn {
+  margin-top: 8px;
+  width: 100%;
+  max-width: 220px;
+}
+
+@media (max-width: 480px) {
+  .interactive-star-btn {
+    font-size: 1.8rem;
+  }
+}

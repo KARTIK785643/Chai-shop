@@ -1,0 +1,145 @@
+.hero-section {
+  background: linear-gradient(135deg, #3E2723 0%, #4E342E 50%, #2D1A12 100%);
+  color: #FFFFFF;
+  padding: 80px 0 60px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 5px solid var(--accent);
+}
+
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(rgba(255, 179, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #EFEBE9;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.hero-search-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.meta-badge {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+
+.home-main-section {
+  padding: 50px 20px;
+}
+
+.homepage-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.homepage-listings-panel {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.homepage-map-panel {
+  flex: 1;
+}
+
+.map-sticky-wrapper {
+  position: sticky;
+  top: 95px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-header-meta {
+  margin-bottom: 16px;
+}
+
+.section-header-meta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.section-header-meta p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 1024px) {
+  .homepage-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .homepage-listings-panel {
+    width: 100%;
+    order: 2;
+  }
+  
+  .homepage-map-panel {
+    width: 100%;
+    order: 1;
+  }
+  
+  .map-sticky-wrapper {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0 40px;
+  }
+  
+  .hero-title {
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-main-section {
+    padding: 30px 20px;
+  }
+}

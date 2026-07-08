@@ -1,0 +1,123 @@
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg-card);
+}
+
+.shop-card-image-container {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.shop-card:hover .shop-card-image {
+  transform: scale(1.05);
+}
+
+.shop-card-rating-floating {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--accent);
+  color: var(--text-dark);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.shop-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.shop-card-name {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.shop-card-address {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.location-icon {
+  font-size: 1rem;
+}
+
+.shop-card-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.shop-card-review-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+
+.star {
+  font-size: 1.1rem;
+}
+
+.star.filled {
+  color: var(--accent);
+}
+
+.star.half {
+  color: var(--accent);
+}
+
+.star.empty {
+  color: #CCCCCC;
+}
+
+.shop-card-review-count {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.shop-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.shop-card-btn {
+  font-size: 0.85rem;
+  padding: 10px;
+}
+
+.directions-btn {
+  border-color: var(--border-color);
+}
+
+.directions-btn:hover {
+  background-color: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--text-dark);
+}

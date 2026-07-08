@@ -1,0 +1,321 @@
+.rewards-page {
+  padding: 50px 20px;
+  min-height: calc(100vh - 140px);
+}
+
+.rewards-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.rewards-left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rewards-right-column {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.rewards-wallet-card {
+  padding: 30px;
+  background-color: var(--bg-card);
+  text-align: center;
+}
+
+.wallet-header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+}
+
+.wallet-header h3 {
+  font-size: 1.6rem;
+}
+
+.wallet-user-email {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+
+.wallet-points-display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.points-circle-outer {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.points-svg-circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  fill: none;
+  stroke: var(--border-color);
+  stroke-width: 8;
+}
+
+.circle-progress {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.8s ease-in-out;
+}
+
+.points-value-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.points-large {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.points-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.points-status-desc {
+  margin-bottom: 24px;
+}
+
+.status-success-message {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.status-info-message {
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.status-info-message strong {
+  color: var(--primary);
+}
+
+.points-status-desc small {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  display: block;
+}
+
+.redeem-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+}
+
+
+.coupon-generated-card {
+  padding: 24px;
+  text-align: center;
+  background-color: var(--accent-light);
+  border: 1px dashed var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.coupon-success-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--success);
+}
+
+.coupon-gift-icon {
+  font-size: 1.5rem;
+}
+
+.coupon-success-header h4 {
+  font-size: 1.25rem;
+}
+
+.coupon-generated-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.coupon-code-box {
+  background-color: #FFFFFF;
+  border: 2px dashed var(--primary);
+  border-radius: var(--border-radius-sm);
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.coupon-code-box:hover {
+  background-color: var(--border-color);
+  transform: scale(1.03);
+}
+
+.coupon-code-text {
+  font-family: monospace;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--primary);
+}
+
+.copy-hint {
+  font-size: 1.2rem;
+}
+
+.copy-instruction-text {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+
+.rewards-earn-rules-card, .rewards-history-card {
+  padding: 24px;
+  background-color: var(--bg-card);
+}
+
+.rewards-earn-rules-card h3, .rewards-history-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  border-bottom: 1.5px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.earn-rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.earn-rules-list li {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.rule-icon {
+  font-size: 1.5rem;
+  background-color: var(--bg-cream);
+  padding: 10px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.earn-rules-list strong {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.earn-rules-list p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 2px;
+}
+
+
+.rewards-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-item-details strong {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.history-item-details p {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 2px;
+}
+
+.history-item-code {
+  font-family: monospace;
+  font-weight: 700;
+  background-color: var(--bg-cream);
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.history-item-code:hover {
+  background-color: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--text-dark);
+}
+
+.history-empty {
+  color: var(--text-light);
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+@media (max-width: 900px) {
+  .rewards-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .rewards-left-column, .rewards-right-column {
+    width: 100%;
+  }
+}
